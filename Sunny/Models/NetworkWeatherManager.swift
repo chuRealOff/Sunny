@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct NetworkWeatherManager {
     func fetchCurrentWeather(forCity city: String) {
@@ -14,11 +15,21 @@ struct NetworkWeatherManager {
         let session = URLSession(configuration: .default)
         let task = session.dataTask(with: url) { data, response, error in
             if let data = data {
-                let dataString = String.init(data: data, encoding: .utf8)
-                print(dataString!)
+               let currentWeather = parseJSON(withData: data)
             }
         }
         task.resume()
     }
     
+    func parseJSON(withData data: Data) -> CurrentWeather? {
+        let decoder = JSONDecoder()
+        do {
+            let currentWeatherData = try decoder.decode(CurrentWeatherData.self, from: data)
+            guard let currentWeather = CurrentWeather(currentWeatherData: currentWeatherData) else { return nil }
+            return currentWeather
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        return nil
+    }
 }
