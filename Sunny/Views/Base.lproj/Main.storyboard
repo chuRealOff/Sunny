@@ -23,8 +23,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dP8-B4-kIj">
                                 <rect key="frame" x="129" y="64" width="170" height="261"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.rain.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yan-ec-H2q">
-                                        <rect key="frame" x="0.0" y="0.6666666666666714" width="170" height="171"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.sun" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yan-ec-H2q">
+                                        <rect key="frame" x="0.0" y="-0.3333333333333286" width="170.66666666666669" height="168.66666666666669"/>
                                         <color key="tintColor" name="infoColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="170" id="TGF-b8-V75"/>
@@ -48,17 +48,17 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="-9" translatesAutoresizingMaskIntoConstraints="NO" id="RYL-LE-TDx">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="RYL-LE-TDx">
                                         <rect key="frame" x="0.0" y="241.66666666666669" width="170" height="19.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feels like" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBp-7u-TTG">
-                                                <rect key="frame" x="0.0" y="0.0" width="119" height="19.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="133.66666666666666" height="19.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                 <color key="textColor" name="infoColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23°C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2m-4k-pFg" userLabel="23°C">
-                                                <rect key="frame" x="110" y="0.0" width="60" height="19.333333333333332"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2m-4k-pFg" userLabel="23°C">
+                                                <rect key="frame" x="133.66666666666669" y="0.0" width="36.333333333333343" height="19.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                 <color key="textColor" name="infoColor"/>
                                                 <nil key="highlightedColor"/>
@@ -113,7 +113,7 @@
                     </view>
                     <connections>
                         <outlet property="cityLabel" destination="fy9-S9-9rl" id="hvw-LM-PHu"/>
-                        <outlet property="feelsLikeTemperatureLabel" destination="TBp-7u-TTG" id="wnv-ho-F12"/>
+                        <outlet property="feelsLikeTemperatureLabel" destination="v2m-4k-pFg" id="PiZ-zZ-Hfg"/>
                         <outlet property="temperatureLabel" destination="Gv4-T0-9Zy" id="sdk-4X-Hxj"/>
                         <outlet property="weatherIconImageView" destination="yan-ec-H2q" id="SzL-4h-521"/>
                     </connections>
@@ -125,7 +125,7 @@
     </scenes>
     <resources>
         <image name="background" width="375" height="667"/>
-        <image name="cloud.rain.fill" catalog="system" width="125" height="128"/>
+        <image name="cloud.sun" catalog="system" width="128" height="95"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="infoColor">
             <color red="0.95099997520446777" green="1" blue="0.66900002956390381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
