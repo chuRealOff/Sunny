@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0982992912FDCD0092045F /* CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0982982912FDCD0092045F /* CLLocationManagerDelegate.swift */; };
 		AB1C0326290ACB1F00A4E450 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1C0325290ACB1F00A4E450 /* AppDelegate.swift */; };
 		AB1C0328290ACB1F00A4E450 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1C0327290ACB1F00A4E450 /* SceneDelegate.swift */; };
 		AB1C032A290ACB1F00A4E450 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1C0329290ACB1F00A4E450 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB0982982912FDCD0092045F /* CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManagerDelegate.swift; sourceTree = "<group>"; };
 		AB1C0322290ACB1F00A4E450 /* Sunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sunny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1C0325290ACB1F00A4E450 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB1C0327290ACB1F00A4E450 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				AB1C0340290AD77F00A4E450 /* VC+AlertController.swift */,
+				AB0982982912FDCD0092045F /* CLLocationManagerDelegate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				AB1C032A290ACB1F00A4E450 /* ViewController.swift in Sources */,
 				AB1C0326290ACB1F00A4E450 /* AppDelegate.swift in Sources */,
 				AB4F7C0629113FFE00E658EC /* CurrentWeather.swift in Sources */,
+				AB0982992912FDCD0092045F /* CLLocationManagerDelegate.swift in Sources */,
 				AB4F7C00290FD49000E658EC /* NetworkWeatherManager.swift in Sources */,
 				AB1C0328290ACB1F00A4E450 /* SceneDelegate.swift in Sources */,
 				AB1C0341290AD77F00A4E450 /* VC+AlertController.swift in Sources */,
